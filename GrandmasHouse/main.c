@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
+#include <time.h>
 #include <SDL.h>
 
 #define SCREEN_WIDTH 	640
 #define SCREEN_HEIGHT 	480
-#define MAX_PRINT		100
+#define MAX_PRINT		40
 
 /**
 	TODO_NEXT:
-	 - Time Program Execution
 	 - Draw Points
 **/
 
@@ -36,6 +36,13 @@ void find_closest_points( const point_t const *points,
 
 int main( int argc, char *argv[] )
 {
+	// Start SDL
+	if ( SDL_Init(SDL_INIT_EVERYTHING) < 0 )
+	{
+		printf( "SDL could not initialize! SDL Error: %s\n", SDL_GetError() );
+		return 1;
+	}
+
 	int result = 1;
 
 	point_t *points = NULL;
@@ -62,10 +69,17 @@ int main( int argc, char *argv[] )
 			return 1;
 		}
 
+		// SDL to time
+		clock_t end_time;
+		clock_t start_time = clock();
+
 		// Get Size Info and Allocate Memory
 		fgets( buffer, 256, file );
 		sscanf( buffer, "%u", &point_count );
 		array_size = point_count * sizeof( point_t );
+		printf( "Allocating %u bytes for point array (%u per point)\n", 
+				array_size,
+				sizeof( point_t ) );
 		points = malloc( array_size );
 
 		// Read Points
@@ -79,10 +93,14 @@ int main( int argc, char *argv[] )
 			}
 
 			//printf( "%s", buffer );
-			// TODO(troy): Change this back to take normal input: (%lf, %lf)
-			int read = sscanf( buffer, "%lf %lf", &(points[i].x), &(points[i].y) );
+			int read = sscanf( buffer, "(%lf, %lf)", &(points[i].x), &(points[i].y) );
 			//printf( "%i doubles read\n", read );
 		}
+
+		// Print file load time
+		end_time = clock();
+		printf( "\n%f seconds taken to load file\n", ((float)(end_time-start_time))/CLOCKS_PER_SEC );
+		start_time = end_time;
 
 		// Close File 
 		fclose( file );
@@ -99,6 +117,9 @@ int main( int argc, char *argv[] )
 		printf( "Closest Points: (%lf,%lf) and (%lf,%lf)\n",
 				close1.x, close1.y, close2.x, close2.y );
 
+		end_time = clock();
+		printf( "\n%f seconds finding closest\n", ((float)(end_time-start_time))/CLOCKS_PER_SEC );
+
 		// Show GUI Solution
 		result = show_SDL_output();
 	}
@@ -112,18 +133,16 @@ int main( int argc, char *argv[] )
 	if ( points != NULL )
 		free( points );
 
+	// Free SDL
+	SDL_Quit();
+
 	// Return Success
 	return result;
 }
 
 int show_SDL_output()
 {
-	// Start SDL
-	if ( SDL_Init(SDL_INIT_EVERYTHING) < 0 )
-	{
-		printf( "SDL could not initialize! SDL Error: %s\n", SDL_GetError() );
-		return 1;
-	}
+	// NOTE(troy): Assumes SDL is already initialise
 
 	// Create Window and Renderer
 	SDL_Window 		*window = SDL_CreateWindow( "Where Does Grandmas House Go?", 
@@ -152,9 +171,6 @@ int show_SDL_output()
 
 		SDL_RenderPresent( renderer );
 	}
-
-	// Free Resources
-	SDL_Quit();
 
 	// Return Success
 	return 0;
