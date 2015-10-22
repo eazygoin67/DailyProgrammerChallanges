@@ -1,0 +1,26 @@
+addItem( 'Buy a new phone' );
+addItem( 'Go to work' );
+viewList();
+
+deleteItem( 'Go to work' );
+viewList();
+
+deleteItem( 'Buy a new phone' );
+addItem( 'Go to school' );
+addItem( 'Take business class' );
+addItem( 'Drop out of business class' );
+addItem( 'Found a startup company' );
+addItem( '???' );
+addItem( 'Profit!' );
+viewList();
+
+deleteItem( 'Delete non-existant item or only part of item doesnt work!' );
+deleteItem( 'Found a' );
+deleteItem( '???' );
+viewList();
+
+clearList();
+addItem( 'Profit!!!!!' ); 
+viewList();
+
+clearList();

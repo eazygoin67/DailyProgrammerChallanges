@@ -1,0 +1,1 @@
+gcc -std=c99 -O3 -o Test.exe main.c -static-libgcc 
