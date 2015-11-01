@@ -6,7 +6,7 @@
 #define MAX_WORD_LENGTH 15
 #define MAX_WORD_COUNT 15
 
-int main( int argc, char ** argv )
+int main( int argc, char **argv )
 {
 	// Set Random Seed
 	srand( time(NULL) );
@@ -15,7 +15,7 @@ int main( int argc, char ** argv )
 	char current_word[128];
 	char *word_list[MAX_WORD_COUNT];
 	size_t mem_size = MAX_WORD_COUNT * (MAX_WORD_LENGTH+1);
-	char* word_block = malloc( mem_size );
+	char *word_block = (char *)malloc( mem_size );
 	memset( word_block, 0, mem_size );
 	if ( word_block == NULL )
 	{
