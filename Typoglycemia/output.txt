@@ -1,0 +1,97 @@
+C (/'si?/, as in the ltteer c) is a gnerael-prpuose, ipmreaivte cmputoer pograrmimng lnaugage, sppurotnig sructuretd pograrminmg, 
+lxiecal vriaalbe socpe and rceusroin, wilhe a satitc tpye ssyetm pevrents mnay uintnndeed oepratoins. 
+By dsegin, C porvieds cnstouctrs taht map effciietlny to tpycial mcainhe istnrutioncs, and tehreofre it has funod lsating use in 
+aplipctioans taht had fromerly been cdeod in assmbely lnguaage, icnudling oeratipng ssytmes, as wlel as vrioaus appilaciton 
+sfotwrae for cmpoterus rnaigng form spureomcuteprs to ebemdedd sstemys.
+
+C was oigirnllay dveeolped by Dnneis Rtchiie bteween 1969 and 1973 at AT&T Blel Lbas,[5] and uesd to re-iplmeemnt the Uinx 
+oerptiang ssyetm.[6] It has sncie bcemoe one of the msot wdiley uesd pogrrmmaing lnauagegs of all tmie,[7][8] wtih C cmpoilres 
+form vriouas vndeors aaivlblae for the mjoritay of eistxnig cmoptuer acrhteiturecs and oeratipng ssteyms. C has been sandtrdizaed 
+by the Aerimcan Ntaonail Sandartds Isnitutte (ASNI) snice 1989 (see ASNI C) and sbuesuqnelty by the Itennratonail Ogranzitaoin 
+for Santarddziaiton (ISO).
+
+C is an ipmeartvie (pocedrraul) lnaguage. It was dsienged to be cmoipled uinsg a rletaievly sratigtfhorarwd cmoplier, to povirde 
+low-lveel access to mmeory, to povrdie lnagugae cnstroucts taht map eficfentily to mchiane isnrtcuitons, and to rquiree mniimal 
+run-tmie spuoprt. C was terhfoere uesufl for mnay aplipatconis taht had fromerly been cdeod in asesblmy lnauggae, scuh as in 
+sstyem pogrramming.
+
+Dspetie its low-lveel cpaailitiebs, the lnguaage was dsigeend to ecounrgae corss-patlorfm pograrmmnig. A satdnrads-cmpoilnat and 
+proatbly witrten C pogrram can be cmopield for a vrey wdie vrieaty of cmpouetr patlfomrs and oeprtanig ssyetms wtih few cahnges 
+to its suroce cdoe. The lngaague has bcomee aavilalbe on a vrey wdie rngae of paltofmrs, form ebmddeed mcriooncrotlerls to 
+spurcompeuetrs.
+
+Lkie msot ipmreaivte lnauagegs in the AGLOL tadritoin, C has fcilaiiets for srtcutreud porrgamming and alolws lxieacl vriaalbe sopce and rcuersoin, wilhe a satitc tpye ssytem perevnts mnay uintennedd oepraionts. In C, all eexcutable cdoe is cnotained wtiihn sbruoutneis, wihch are cllaed "fncutonis" (atholguh not in the srictt snese of fnuciotnal pograrmimng). Fnutiocn prameteras are awalys psaesd by vlaue. Psas-by-rferencee is smuilated in C by eplxcitliy psasing pinteor vluaes. C pograrm suorce txet is fere-fromat, uinsg the smecoilon as a satetenmt trmieatnor and crluy barces for goruinpg bolkcs of satemtents.
+
+The C lnaugage aslo ehibixts the floolwing carahtecrisicts:
+
+Tehre is a samll, fxied nmuber of kyewords, iclnudnig a flul set of folw of cnorotl pirmiitevs: for, if/esle, wilhe, siwcth, and 
+do/wilhe. Tehre is one nmasepcae, and uesr-dfenied nmeas are not dstinguiisehd form kyeowrds by any knid of sgiil.
+
+Tehre are a lrgae nmuber of aitrhetmical and lgoical oepatorrs, scuh as +, +=, ++, &, ~, etc.
+	Mroe tahn one asisgmnent may be preorfmed in a sngile sattmeent.
+
+	Fncuiotn rterun vlueas can be ingroed wehn not needed.
+
+	Tpinyg is sattic, but wakely efnrceod: all dtaa has a tpye, but iplmciit cnvoesirnos can be preormefd; for istnncae, 
+	carahcters can be uesd as itegerns.
+
+	Dclaretaoin snytax mmicis uasge cnotxet. C has no "dfeine" kyewrod; isteand, a satemtnet bgienning wtih the nmae of a tpye 
+	is tkaen as a dcealatroin. Terhe is no "fnuticon" kyeorwd; isneatd, a fncutoin is idicatend by the prentheases of an 
+	agurenmt lsit.
+
+	Uesr-dfeiend (tpeyedf) and cmpoonud tpeys are psosblie.
+
+	Hteeogreneuos agrggeate dtaa tpeys (srutct) allow rlaeetd dtaa eemelnts to be accessed and assgneid as a uint.
+
+	Arary idnxeing is a scondeary ntaoiton, dfeiend in trems of piotenr aitrhetmic. Ulnkie sructts, arayrs are not frsit-calss 
+	ojbetcs; tehy cnnoat be asisnegd or cmoarepd uinsg snglie bilut-in oeprtoars. Terhe is no "arary" kyeorwd, in use or 
+	dfeiitionn; isntaed, suqare barcekts idinacte arrays sntyatciclaly, for eamxlpe mnoth[11].
+
+	Eumnretead tpeys are psoislbe wtih the eunm kyeowrd. Tehy are not tgaegd, and are feelry itnreonvectrbile wtih itngeres.
+
+	Sringts are not a speaarte dtaa tpye, but are cnveotionnlaly iplementmed as nlul-tremianted arayrs of caharcters.
+
+	Low-lveel acecss to cmputeor mmeory is psoisble by cnoertving mcahine adresdses to tpyed pionters.
+
+	Pocedrreus (sbroutunies not rternunig vlaues) are a secipal csae of fnctiuon, wtih an utnyped rteurn tpye viod.
+
+	Fnctionus may not be dfiened wtiihn the lxieacl sopce of ohter fnuciotns.
+
+	Fnuciton and dtaa pinoetrs premit ad hoc run-tmie plyoomrpihsm.
+
+	A peprroecsosr prfoerms mcrao dfenitioin, surcoe cdoe flie icnlusion, and cndoitoianl cmopilaiotn.
+
+	Terhe is a bsiac from of mduolraity: flies can be cmpioled sparateley and lnkeid tgotheer, wtih cnorotl oevr wihch 
+	fnuciotns and dtaa ojebcts are vsiible to ohetr fleis via sattic and eterxn attibrutes.
+
+	Cmopelx fnuctinalitoy scuh as I/O, sritng mnipaluatoin, and mtahmeatcail fncutonis are cnsiotsntely dlegateed to lbiarry 
+	rutoiens.
+
+C deos not iclunde smoe faeutres funod in nweer, mroe mdeorn hgih-lveel lnaugages, icnulindg ojecbt oiernttaion and grbaage 
+clloetcion.
+
+Mnay ltaer lnguaaegs hvae brrowoed dreitcly or idnreitlcy form C, icludinng C++, D, Go, Rsut, Jvaa, JvaacriSpt, Lmibo, LPC, C#, 
+Ojbecitve-C, Prel, PHP, Pthyon, Vrielog (hrawarde dsercipiton lngaauge),[4] and Uinx's C sehll. Teshe lnguaaegs hvae darwn mnay of 
+tehir cntrool sruttcrues and ohetr bsiac faeuters form C. Msot of tehm (wtih Pthoyn bieng the msot daratimc ecxepiton) are aslo 
+vrey sntycaicatlly smiliar to C in gnereal, and tehy tned to cmoinbe the rcoengizable epxersiosn and sattmenet sntyax of C wtih 
+udnrleiyng tpye ssytems, dtaa mdoles, and smenaitcs taht can be rdiacally dfifeernt.
+
+The oirgin of C is colesly teid to the dvelepmeont of the Uinx oepartnig sstyem, oirginally ipmemeltend in assebmly lnguagae on a 
+PDP-7 by Rtihcie and Tomhpson, icnoropatrnig sveearl iedas form clloeagues. Eevtnullay tehy dcedeid to prot the oepatinrg ssteym 
+to a PDP-11. The oigrinal PDP-11 vrsioen of Uinx was dveeolepd in assembly lnguagae. The dvelepoers wree cnsioedinrg to rwritee 
+the ssteym uinsg the B lnauggae, Tompsohn's smipilfeid vreison of BPCL.[9] Hwoveer B's ianbiitly to tkae avadtange of smoe of the 
+PDP-11's fateuers, ntaboly btye adredssbilaity, led to C.
+
+The dveelpmenot of C satterd in 1972 on the PDP-11 Uinx sstyem,[10] and frsit apeaperd in Vresion 2 Uinx.[11] The lnagague was 
+not iiniallty dsienged wtih prtobailtiy in mnid, but soon ran on dffeirent palftrmos as wlel: a cmpoiler for the Hnoyewell 6000 
+was wirtten wthiin the frsit yaer of C's hstiory, wihle an IBM Sstyem/370 prot flloowed soon.[1][10] The nmae of C smpliy 
+cnoinuetd the aplahbetic oderr satretd by B.[12]
+
+Aslo in 1972, a lrage prat of Uinx was rweittern in C.[13] By 1973, wtih the aditdion of srtuct tpeys, the C lnguaage had bceome 
+pweorufl eonugh taht msot of the Uinx's kreenl was now in C.
+
+Uinx was one of the frist oepartnig ssyetm krenles iplemmetned in a lnauagge ohter tahn assmelby. (Erlaier isntanecs iclnude the 
+Mltuics sstyem (wirtten in PL/I), and MCP (Msaetr Cnortol Porgarm) for the Brroughus B5000 wirtten in AGLOL in 1961.) Crcia 1977, 
+frtuehr cangehs to the lnguagae wree mdae by Rtchiie and Sethpen C. Jhnsoon to fciailatte proatilibty of the Uinx oepartnig sstyem. 
+Jhosonn's Prtoblae C Cmoipelr srveed as the bsias for svereal iplememnatitnos of C on new patlforms.[10]
+
