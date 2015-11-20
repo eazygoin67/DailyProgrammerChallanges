@@ -14,3 +14,5 @@ Daily Challenges Attempted:
  - [Game of Threes](https://www.reddit.com/r/dailyprogrammer/comments/3r7wxz/20151102_challenge_239_easy_a_game_of_threes/)
  - [Typoglycemia](https://www.reddit.com/r/dailyprogrammer/comments/3s4nyq/20151109_challenge_240_easy_typoglycemia/)
  
+Weekly Mini-Challenges Attempted:
+ - [Grab](https://www.reddit.com/r/dailyprogrammer/comments/3o4tpz/weekly_24_mini_challenges/cvu1763)
