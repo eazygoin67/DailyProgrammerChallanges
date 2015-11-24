@@ -31,6 +31,7 @@ int main( int argc, char **argv )
 	if ( line == NULL )
 	{
 		fprintf( stderr, "Error: Could not allocate memory for line reading\n" );
+		fclose( file );
 		return 1;
 	}
 
